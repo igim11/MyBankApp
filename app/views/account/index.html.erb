@@ -5,7 +5,10 @@
   </div>
 </div>
 <div class="account_btns">
-    <button type="button" class="btn btn-primary">Deposit</button>
-    <button type="button" class="btn btn-primary">Transfer</button>
-    <button type="button" class="btn btn-primary">Withdraw</button>
+    <%= link_to "Deposit", transactions_deposit_path, class:"btn btn-primary" %>
+    <%= link_to "Transfer", transactions_transfer_path, class:"btn btn-primary" %>
+    <%= link_to "Withdraw", transactions_withdraw_path, class:"btn btn-primary" %>
 </div>
+<div>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+</div
